@@ -99,7 +99,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
 
   useEffect(() => {
     fetchNews();
-  }, []);
+  }, [fetchNews, filteredNews.length]);
 
   return (
     <AppContext.Provider

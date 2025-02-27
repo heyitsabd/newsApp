@@ -4,6 +4,7 @@ import { useAppContext } from "@/context/AppContext";
 import { useRouter, useSearchParams } from "next/navigation";
 import LoadingAnimation from "./LoadingAnimation";
 import { FaNewspaper } from "react-icons/fa";
+import Image from "next/image";
 
 function NewsComp() {
   const { filteredNews, fetchNews, selectedCategory } = useAppContext();
