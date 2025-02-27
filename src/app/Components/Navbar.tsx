@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
       <nav className="bg-gray-900 dark:bg-gray-800 px-5 py-4 shadow-md">
         <div className="flex justify-between items-center gap-5">
           <Link
-            href="/"
+            href="./"
             onClick={() => fetchNews("latest")}
             className="text-2xl font-bold bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500 bg-clip-text text-transparent hover:opacity-80 transition"
           >
