@@ -7,7 +7,7 @@ import { FaNewspaper } from "react-icons/fa";
 import Image from "next/image";
 
 function NewsComp() {
-  const { filteredNews, fetchNews, selectedCategory } = useAppContext();
+  const { filteredNews, fetchNews, selectedCategory,news } = useAppContext();
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -18,8 +18,6 @@ function NewsComp() {
     if (filteredNews.length === 0) {
       setLoading(true);
       fetchNews(selectedCategory).finally(() => setLoading(false));
-    } else {
-      setLoading(false);
     }
   }, [selectedCategory]);
 
